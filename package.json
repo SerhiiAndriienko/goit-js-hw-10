@@ -15,14 +15,17 @@
   },
   "dependencies": {
     "flatpickr": "^4.6.13",
+    "lodash": "^4.17.21",
+    "lodash.debounce": "^4.0.8",
     "modern-normalize": "^1.1.0",
     "notiflix": "^3.2.6"
   },
   "devDependencies": {
-    "modern-normalize": "^1.1.0",
     "@parcel/transformer-sass": "^2.6.0",
+    "modern-normalize": "^1.1.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
+    "parcel-transformer-hbs": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
