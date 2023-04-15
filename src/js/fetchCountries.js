@@ -31,12 +31,12 @@ function makeMarkup(arrayOfCountries) {
         let markup = '';
         const moreInfo =
           '<p class="more-info"> Click to open more info about country:<p/>';
-        countryList.insertAdjacentHTML('beforeend', moreInfo);
         country.forEach(({ flags, name }) => {
           markup += `<li> <img width='40px' height="30px" src=${flags.png} alt=${flags.alt} />${name.common}</li>`;
         });
 
-        countryList.insertAdjacentHTML('beforeend', markup);
+        countryList.innerHTML = markup;
+        countryList.insertAdjacentHTML('afterBegin', moreInfo);
       } else {
         countryList.innerHTML = '';
         const { flags, name, capital, population, languages } = country[0];
