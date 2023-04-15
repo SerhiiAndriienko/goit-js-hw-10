@@ -18,3 +18,41 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+.key-js {
+  font-weight: bold;
+}
+.card-name {
+  font-size: 30px;
+  margin: 0;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+#js-list {
+  padding: 0;
+}
+#js-list > li {
+  display: flex;
+  /* justify-content: stretch; */
+  column-gap: 10px;
+  width: 30%;
+  margin-left: 0;
+  list-style: none;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#js-list > li:hover {
+  background-color: rgb(211, 248, 236);
+  cursor: pointer;
+}
+
+#js-list li img {
+  border-radius: 10%;
+}
+.more-info {
+  font-weight: bold;
+}
